@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap table</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<h1>The Table Assignment</h1>
+
+<body class="container">
+    <br>
+
+    <div class="table-responsive">
+        <table id="list" class="table table-dark table-sm">
+            <caption>List of users</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Handle</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">@olusho</th>
+                    <td>Olu</td>
+                    <td>Sho</td>
+                    <td>Primary User</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Enter your info below</h3>
+    <!---- form ---->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="new-start-date" placeholder="First name" aria-label="First name">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="new-end-date" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+            </div><br>
+            <!---- username input ---->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="new-task" placeholder="username">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!---- form button ---->
+            <div class="col">
+                <button id="add" type="submit" class="btn btn-dark">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</html>
